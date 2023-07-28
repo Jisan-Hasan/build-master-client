@@ -1,4 +1,6 @@
 import Link from "next/link";
+import { FaDollarSign } from "react-icons/fa";
+import { FcRating } from "react-icons/fc";
 
 const FeaturedProduct = ({ products }) => {
     return (
@@ -9,8 +11,8 @@ const FeaturedProduct = ({ products }) => {
                 {/*  */}
                 {products?.map((product) => (
                     <Link
+                        key={product._id}
                         href={`/productDetails/${product._id}`}
-                        key={product.id}
                         className="card w-96 bg-base-100 shadow-xl"
                     >
                         <figure>
@@ -22,17 +24,25 @@ const FeaturedProduct = ({ products }) => {
                         <div className="card-body">
                             <h2 className="card-title">
                                 {product.productName}
-                                <div className="badge badge-secondary">NEW</div>
-                            </h2>
-                            <p>
-                                If a dog chews shoes whose shoes does he choose?
-                            </p>
-                            <div className="card-actions justify-end">
-                                <div className="badge badge-outline">
-                                    Fashion
+                                <div
+                                    className={`badge ${
+                                        product.status === "In Stock"
+                                            ? "badge-primary"
+                                            : "badge-error"
+                                    }`}
+                                >
+                                    {product.status}
                                 </div>
-                                <div className="badge badge-outline">
-                                    Products
+                            </h2>
+                            <div className="card-actions justify-between">
+                                <div className="flex justify-center items-center gap-1 font-bold">
+                                    <FaDollarSign />
+                                    {product.price}
+                                </div>
+
+                                <div className="flex justify-center items-center gap-1">
+                                    <FcRating size={"20px"} />
+                                    {product.averageRating}
                                 </div>
                             </div>
                         </div>
