@@ -1,4 +1,5 @@
 import RootLayout from "@/components/Layouts/RootLayout";
+import Banner from "@/components/ui/Banner/Banner";
 import FeaturedCategory from "@/components/ui/FeaturedCategory/FeaturedCategory";
 import FeaturedProduct from "@/components/ui/FeaturedProduct/FeaturedProduct";
 import { Inter } from "next/font/google";
@@ -21,6 +22,7 @@ export default function Home({ categories, products }) {
                 />
             </Head>
             <main>
+                <Banner />
                 <FeaturedCategory categories={categories} />
                 <FeaturedProduct products={products} />
             </main>
