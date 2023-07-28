@@ -24,51 +24,77 @@ const Navbar = () => {
                         className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
                     >
                         <li>
-                            <a>Item 1</a>
-                        </li>
-                        <li>
                             <a>Parent</a>
                             <ul className="p-2">
                                 <li>
-                                    <a>Submenu 1</a>
+                                    <a>Processor</a>
                                 </li>
                                 <li>
-                                    <a>Submenu 2</a>
+                                    <a>Motherboard</a>
+                                </li>
+                                <li>
+                                    <a>RAM</a>
+                                </li>
+                                <li>
+                                    <a>PSU</a>
+                                </li>
+                                <li>
+                                    <a>Storage</a>
+                                </li>
+                                <li>
+                                    <a>Monitor</a>
+                                </li>
+                                <li>
+                                    <a>Others</a>
                                 </li>
                             </ul>
                         </li>
                         <li>
-                            <a>Item 3</a>
+                            <a>About Us</a>
                         </li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost normal-case text-xl">daisyUI</a>
+                <a className="btn btn-ghost uppercase text-xl text-blue-500 font-extrabold">
+                    Build Master
+                </a>
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
-                    <li>
-                        <a>Item 1</a>
-                    </li>
                     <li tabIndex={0}>
                         <details>
-                            <summary>Parent</summary>
+                            <summary>Categories</summary>
                             <ul className="p-2">
                                 <li>
-                                    <a>Submenu 1</a>
+                                    <a>Processor</a>
                                 </li>
                                 <li>
-                                    <a>Submenu 2</a>
+                                    <a>Motherboard</a>
+                                </li>
+                                <li>
+                                    <a>RAM</a>
+                                </li>
+                                <li>
+                                    <a>PSU</a>
+                                </li>
+                                <li>
+                                    <a>Storage</a>
+                                </li>
+                                <li>
+                                    <a>Monitor</a>
+                                </li>
+                                <li>
+                                    <a>Others</a>
                                 </li>
                             </ul>
                         </details>
                     </li>
                     <li>
-                        <a>Item 3</a>
+                        <a>About Us</a>
                     </li>
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">Build Your Rig</a>
+                <a className="btn">PC Builder</a>
             </div>
         </div>
     );
