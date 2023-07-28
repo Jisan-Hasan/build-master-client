@@ -1,6 +1,8 @@
+import Link from "next/link";
+
 const Navbar = () => {
     return (
-        <div className="navbar bg-base-100">
+        <div className="navbar bg-base-100 max-w-[1600px] mx-auto">
             <div className="navbar-start">
                 <div className="dropdown">
                     <label tabIndex={0} className="btn btn-ghost lg:hidden">
@@ -27,25 +29,33 @@ const Navbar = () => {
                             <a>Parent</a>
                             <ul className="p-2">
                                 <li>
-                                    <a>Processor</a>
+                                    <Link href="/products/processor">
+                                        Processor
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a>Motherboard</a>
+                                    <Link href="/products/motherboard">
+                                        Motherboard
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a>RAM</a>
+                                    <Link href="/products/ram">RAM</Link>
                                 </li>
                                 <li>
-                                    <a>PSU</a>
+                                    <Link href="/products/psu">PSU</Link>
                                 </li>
                                 <li>
-                                    <a>Storage</a>
+                                    <Link href="/products/storage">
+                                        Storage
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a>Monitor</a>
+                                    <Link href="/products/monitor">
+                                        Monitor
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a>Others</a>
+                                    <Link href="/products/others">Others</Link>
                                 </li>
                             </ul>
                         </li>
@@ -65,25 +75,33 @@ const Navbar = () => {
                             <summary>Categories</summary>
                             <ul className="p-2">
                                 <li>
-                                    <a>Processor</a>
+                                    <Link href="/products/processor">
+                                        Processor
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a>Motherboard</a>
+                                    <Link href="/products/motherboard">
+                                        Motherboard
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a>RAM</a>
+                                    <Link href="/products/ram">RAM</Link>
                                 </li>
                                 <li>
-                                    <a>PSU</a>
+                                    <Link href="/products/psu">PSU</Link>
                                 </li>
                                 <li>
-                                    <a>Storage</a>
+                                    <Link href="/products/storage">
+                                        Storage
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a>Monitor</a>
+                                    <Link href="/products/monitor">
+                                        Monitor
+                                    </Link>
                                 </li>
                                 <li>
-                                    <a>Others</a>
+                                    <Link href="/products/others">Others</Link>
                                 </li>
                             </ul>
                         </details>

@@ -1,7 +1,7 @@
 const FeaturedCategory = ({ categories }) => {
     console.log(categories);
     return (
-        <div className="text-center">
+        <div className="text-center max-w-[1600px] mx-auto">
             <h2 className="text-xl font-bold">Featured Category</h2>
             <p className="capitalize">
                 Get your desired product from featured category!

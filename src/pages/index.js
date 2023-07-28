@@ -1,11 +1,12 @@
 import RootLayout from "@/components/Layouts/RootLayout";
 import FeaturedCategory from "@/components/ui/FeaturedCategory/FeaturedCategory";
+import FeaturedProduct from "@/components/ui/FeaturedProduct/FeaturedProduct";
 import { Inter } from "next/font/google";
 import Head from "next/head";
 
 const inter = Inter({ subsets: ["latin"] });
 
-export default function Home({ categories }) {
+export default function Home({ categories, products }) {
     return (
         <>
             <Head>
@@ -21,6 +22,7 @@ export default function Home({ categories }) {
             </Head>
             <main>
                 <FeaturedCategory categories={categories} />
+                <FeaturedProduct products={products} />
             </main>
         </>
     );
@@ -31,13 +33,21 @@ Home.getLayout = function getLayout(page) {
 };
 
 export const getStaticProps = async () => {
-    const res = await fetch("http://localhost:5000/featuredCategories");
-    const categories = await res.json();
+    const resFeaturedCategories = await fetch(
+        "http://localhost:5000/featuredCategories"
+    );
+    const categories = await resFeaturedCategories.json();
+
+    const resFeaturedProducts = await fetch(
+        "http://localhost:5000/featuredProducts"
+    );
+    const products = await resFeaturedProducts.json();
 
     return {
         props: {
             categories: categories,
+            products: products,
         },
-        revalidate: 1000,
+        revalidate: 10,
     };
 };
