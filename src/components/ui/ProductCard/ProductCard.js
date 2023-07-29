@@ -5,7 +5,7 @@ import { FcRating } from "react-icons/fc";
 const ProductCard = ({ product }) => {
     return (
         <Link
-            href={`/productDetails/${product._id}`}
+            href={`/product/${product._id}`}
             className="card w-96 bg-base-100 shadow-xl"
         >
             <figure>
