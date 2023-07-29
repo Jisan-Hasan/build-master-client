@@ -26,36 +26,35 @@ const Navbar = () => {
                         className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
                     >
                         <li>
-                            <a>Parent</a>
                             <ul className="p-2">
                                 <li>
-                                    <Link href="/products/processor">
+                                    <Link href="/category/processor">
                                         Processor
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/products/motherboard">
+                                    <Link href="/category/motherboard">
                                         Motherboard
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/products/ram">RAM</Link>
+                                    <Link href="/category/ram">RAM</Link>
                                 </li>
                                 <li>
-                                    <Link href="/products/psu">PSU</Link>
+                                    <Link href="/category/psu">PSU</Link>
                                 </li>
                                 <li>
-                                    <Link href="/products/storage">
+                                    <Link href="/category/storage">
                                         Storage
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/products/monitor">
+                                    <Link href="/category/monitor">
                                         Monitor
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/products/others">Others</Link>
+                                    <Link href="/category/others">Others</Link>
                                 </li>
                             </ul>
                         </li>
@@ -64,44 +63,47 @@ const Navbar = () => {
                         </li>
                     </ul>
                 </div>
-                <a className="btn btn-ghost uppercase text-xl text-blue-500 font-extrabold">
+                <Link
+                    href="/"
+                    className="btn btn-ghost uppercase text-xl text-blue-500 font-extrabold"
+                >
                     Build Master
-                </a>
+                </Link>
             </div>
-            <div className="navbar-center hidden lg:flex">
-                <ul className="menu menu-horizontal px-1">
+            <div className="navbar-center hidden z-[99] lg:flex">
+                <ul className="menu menu-horizontal px-1 ">
                     <li tabIndex={0}>
                         <details>
                             <summary>Categories</summary>
                             <ul className="p-2">
                                 <li>
-                                    <Link href="/products/processor">
+                                    <Link href="/category/processor">
                                         Processor
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/products/motherboard">
+                                    <Link href="/category/motherboard">
                                         Motherboard
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/products/ram">RAM</Link>
+                                    <Link href="/category/ram">RAM</Link>
                                 </li>
                                 <li>
-                                    <Link href="/products/psu">PSU</Link>
+                                    <Link href="/category/psu">PSU</Link>
                                 </li>
                                 <li>
-                                    <Link href="/products/storage">
+                                    <Link href="/category/storage">
                                         Storage
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/products/monitor">
+                                    <Link href="/category/monitor">
                                         Monitor
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/products/others">Others</Link>
+                                    <Link href="/category/others">Others</Link>
                                 </li>
                             </ul>
                         </details>

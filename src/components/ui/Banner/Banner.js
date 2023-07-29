@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { BsCpu } from "react-icons/bs";
 
 const Banner = () => {
