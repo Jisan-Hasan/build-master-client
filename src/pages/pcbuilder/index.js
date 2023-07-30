@@ -52,7 +52,7 @@ PCBuilderPage.getLayout = function getLayout(page) {
 };
 
 export const getServerSideProps = async (context) => {
-    const res = await fetch(`http://localhost:5000/category`);
+    const res = await fetch(`https://build-master-server.vercel.app/category`);
     const data = await res.json();
 
     return {

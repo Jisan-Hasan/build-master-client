@@ -2,7 +2,7 @@ import RootLayout from "@/components/Layouts/RootLayout";
 import ProductCard from "@/components/ui/ProductCard/ProductCard";
 
 const Products = ({ products, category }) => {
-    console.log(products);
+    // console.log(products);
     return (
         <>
             <h2 className="text-center font-bold text-4xl text-blue-400">
@@ -24,7 +24,7 @@ Products.getLayout = function getLayout(page) {
 };
 
 export const getStaticPaths = async () => {
-    const res = await fetch("http://localhost:5000/category");
+    const res = await fetch("https://build-master-server.vercel.app/category");
     const category = await res.json();
 
     const paths = category.map((c) => ({
@@ -37,7 +37,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
     const { params } = context;
     const res = await fetch(
-        `http://localhost:5000/products/${params.category}`
+        `https://build-master-server.vercel.app/products/${params.category}`
     );
     const data = await res.json();
 
