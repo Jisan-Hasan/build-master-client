@@ -1,4 +1,6 @@
-# PC Builder Website - Readme
+# Build Master
+
+Live Link: https://build-master.vercel.app/
 
 ## Overview
 
@@ -19,7 +21,6 @@ The PC Builder Website is a web application built with Next.js that allows users
 6. **Complete Build Button**: The PC Builder page has a "Complete Build" button that remains disabled until the user adds at least 5-6 components (CPU, RAM, Power Supply, Storage, Motherboard, Casing). Once the user meets the minimum requirements, they can click on the "Complete Build" button.
 
 7. **Success Alert**: When the user clicks on the "Complete Build" button, a success alert is shown to indicate that the PC build is complete.
-
 
 ## How to Run the Project
 
@@ -47,7 +48,4 @@ npm install
 npm run dev
 ```
 
-
 5. Open your browser and navigate to `http://localhost:3000` to access the PC Builder website.
-
-
