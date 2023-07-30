@@ -77,33 +77,33 @@ const Navbar = () => {
                             <summary>Categories</summary>
                             <ul className="p-2">
                                 <li>
-                                    <Link href="/category/processor">
+                                    <Link href="/category/Processor">
                                         Processor
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/category/motherboard">
+                                    <Link href="/category/Motherboard">
                                         Motherboard
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/category/ram">RAM</Link>
+                                    <Link href="/category/RAM">RAM</Link>
                                 </li>
                                 <li>
-                                    <Link href="/category/psu">PSU</Link>
+                                    <Link href="/category/PSU">PSU</Link>
                                 </li>
                                 <li>
-                                    <Link href="/category/storage">
+                                    <Link href="/category/Storage">
                                         Storage
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/category/monitor">
+                                    <Link href="/category/Monitor">
                                         Monitor
                                     </Link>
                                 </li>
                                 <li>
-                                    <Link href="/category/others">Others</Link>
+                                    <Link href="/category/Others">Others</Link>
                                 </li>
                             </ul>
                         </details>
@@ -114,7 +114,7 @@ const Navbar = () => {
                 </ul>
             </div>
             <div className="navbar-end">
-                <a className="btn">PC Builder</a>
+                <Link href='/pcbuilder' className="btn">PC Builder</Link>
             </div>
         </div>
     );

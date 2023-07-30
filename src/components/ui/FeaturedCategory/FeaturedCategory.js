@@ -7,7 +7,7 @@ const FeaturedCategory = ({ categories }) => {
             <p className="capitalize">
                 Get your desired product from featured category!
             </p>
-            <div className="grid grid-col-2 md:grid-cols-3 lg:grid-cols-6 mt-3 md:mt-7 lg:w-4/5 mx-auto">
+            <div className="grid grid-col-1 md:grid-cols-3 lg:grid-cols-6 mt-3 md:mt-7 lg:w-4/5 w-full mx-auto justify-center gap-y-2">
                 {categories?.map((category) => (
                     <Link
                         href={`/category/${category.title}`}

@@ -2,9 +2,12 @@ import RootLayout from "@/components/Layouts/RootLayout";
 import ProductCard from "@/components/ui/ProductCard/ProductCard";
 
 const Products = ({ products, category }) => {
+    console.log(products);
     return (
         <>
-        <h2 className="text-center font-bold text-4xl text-blue-400">{category}</h2>
+            <h2 className="text-center font-bold text-4xl text-blue-400">
+                {category}
+            </h2>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-col-3 xl:grid-cols-4 max-w-[1600px] mx-auto mt-8 gap-y-5">
                 {products.map((product) => (
                     <ProductCard key={product._id} product={product} />
@@ -34,7 +37,7 @@ export const getStaticPaths = async () => {
 export const getStaticProps = async (context) => {
     const { params } = context;
     const res = await fetch(
-        `http://localhost:5000/category/${params.category}`
+        `http://localhost:5000/products/${params.category}`
     );
     const data = await res.json();
 
